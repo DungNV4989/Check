@@ -1,11 +1,39 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+/* sidebar */
+$lavender: #eaeaea;
+$gray-light: #777;
 
-$gray-medium-light: #eaeaea;
-.box_sizing {
-  -moz-box-sizing:    border-box;
+aside {
+  section.user_info {
+    margin-top: 20px;
+  }
+  section {
+    padding: 10px 0;
+    margin-top: 20px;
+    &:first-child {
+      border: 0;
+      padding-top: 0;
+    }
+    span {
+      display: block;
+      margin-bottom: 3px;
+      line-height: 1;
+    }
+    h1 {
+      font-size: 1.4em;
+      text-align: left;
+      letter-spacing: -1px;
+      margin-bottom: 3px;
+      margin-top: 0px;
+    }
+  }
+}
+$gray-medium-light: $lavender;
+@mixin box_sizing {
+  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  box-sizing:         border-box;
+  box-sizing: border-box;
 }
 /* miscellaneous */
 .debug_dump {
@@ -14,6 +42,51 @@ $gray-medium-light: #eaeaea;
   width: 100%;
   margin-top: 45px;
   @include box_sizing;
+}
+/*body*/
+body {
+  padding-top: 60px;
+}
+.center {
+  text-align: center;
+   h1 {
+  margin-bottom: 10px;
+  }
+}
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
+.gravatar_edit {
+  margin-top: 15px;
+}
+/* typography */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+h2 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: $gray-light;
+}
+/* forms */
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+input {
+  height: auto !important;
 }
 /* header */
 #logo {
@@ -30,30 +103,6 @@ $gray-medium-light: #eaeaea;
   color: red;
   text-decoration: none;
 }
-/*body*/
-body {
-  padding-top: 60px;
-}
-.center {
-  text-align: center;
-   h1 {
-  margin-bottom: 10px;
-  }
-}
-h1 {
-  font-size: 3em;
-  letter-spacing: -2px;
-  margin-bottom: 30px;
-  text-align: center;
-}
-h2 {
-  font-size: 1.2em;
-  letter-spacing: -1px;
-  margin-bottom: 30px;
-  text-align: center;
-  font-weight: normal;
-  color: gray-light;
-}
 p {
   font-size: 1.1em;
   line-height: 1.7em;
@@ -64,18 +113,14 @@ section {
 textarea {
   resize: vertical;
 }
-/* typography */
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1;
-}
 /*footer*/
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid #eaeaea;
-  color: gray-light;
+  border-top: 1px solid #lavender;
+  color: $gray-light;
   a {
-  color: gray-light;
+  color: $gray-light;
   }
 }
 footer a:hover {
@@ -91,4 +136,34 @@ footer ul {
 footer ul li {
   float: left;
   margin-left: 15px;
+}
+.btn-primary{
+  color: green;
+}
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
+  }
+}
+
+.checkbox {
+  margin: -10px 0 10px 0;
+  span {
+    font-weight: normal;
+    margin-left: 20px;
+  }
+}
+
+#session_remember_me {
+  margin-left: 0;
+  width: auto;
 }
