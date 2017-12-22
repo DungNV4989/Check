@@ -1,0 +1,5 @@
+modles:
+  user:
+    name_maximum: 50
+    emails_maximum: 255
+    password_minimum: 6
