@@ -1,9 +1,9 @@
-<% provide(:title, "Help") %>
-<h1><%= t".title"%></h1>
+<% provide :title, t(".tit") %>
+<h1><%= t ".tit" %></h1>
 <p>
-  	<%= t ".gethelp"%>
-  	<a href="http://www.railstutorial.org/help"><%= t".Railstuto"%></a>.
-  	<%= t".togethelp"%>
-  	<a href="http://www.railstutorial.org/book"><em><%= t".rubyonrails"%></em>
-  	<%= t".book"%></a>.
+  <%= t ".help_tut" %>
+  <a href="http://www.railstutorial.org/help"><%= t ".page" %></a>.
+  <%= t ".help_example" %>
+  <a href="http://www.railstutorial.org/book"><em><%= t ".book_name" %></em> <%= t ".book" %></a>.
 </p>
+

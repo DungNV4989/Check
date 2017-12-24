@@ -1,38 +1,82 @@
 en:
-   hello: "Hello world"
-   application_helper:
-      base_title : "Ruby on Rails Tutorial Sample App"
-   view:   
-      layouts:
-         _header:
-            title: "Sample App"
-            hometitle: "Home"
-            helptitle: "Help"
-            logintitle: "Login"
-      static_pages:
-         home:
-            welcome: "Welcome to the Sample App"
-            hometitle: "This is the home page for the"
-            rubyonrails: "Ruby on Rails Tutorial"
-            application: "sample application."
-         help:
-            title: "Help"
-            gethelp: "Get help on the Ruby on Rails Tutorial at the"
-            Railstuto: "Rails Tutorial help section"
-            rubyonrails: "Ruby on Rails Tutorial"
-            book: "book"
-            togethelp: "To get help on this sample app, see the"
-         about:
-            the: "The"
-            and: "and"
-            title: "About"
-            book: "book"
-            rubyonrails: "Ruby on Rails Tutorial"
-            series: "screencast series"
-            Rails: "Ruby on Rails"
-            toteach: "to teach web development with"
-            sample: "This is the sample application for the tutorial."
-         contact:
-            title: "Contact"
-            do: "Contact us"
-            
+  hello: "Hello world"
+  error: "error"
+  create: "Create my account"
+  welcome: "Welcome to the Sample App!"
+  danger: "User does not exist! Please sign up!"
+  invalid: "Invalid email/password combination"
+  the_form_contains: "The form contains "
+
+  static_pages:
+    about:
+      tit: "About"
+      the: "The"
+      book_name: "Ruby on Rails Tutorial"
+      is: "is a"
+      book: "book"
+      and: "and"
+      screen_cast: "screencast series"
+      teach: "to teach web development with"
+      name: "Ruby on Rails"
+      des: "This is the sample application for the tutorial"
+
+    contact:
+      tit: "Contact"
+      des: "Contact the Ruby on Rails Tutorial about the sample app at the"
+      page: "contact page"
+
+    help:
+      tit: "Help"
+      help_tut: "Get help on the Ruby on Rails Tutorial at the"
+      page: "Rails Tutorial help page"
+      help_example: "To get help on this sample app, see the"
+      book_name: "Ruby on Rails Tutorial"
+      book: "book"
+
+    home:
+      tit: "Welcome to the Sample App"
+      des: "This is the home page for the"
+      book_name: "Ruby on Rails Tutorial"
+      sample: "sample application"
+      sign_up: "Sign up now !"
+      logo_alt: "Rails logo"
+
+  users:
+    new:
+      tit: "Sign up"
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      password_confirm: "Confirmation"
+
+  layouts:
+    footer:
+      the: "The"
+      book_name: "Ruby on Rails Tutorial"
+      by: "by"
+      author: "Michael Hartl"
+      new: "News"
+      about: "About"
+      contact: "Contact"
+
+    header:
+      title: "sample app"
+      home: "Home"
+      help: "Help"
+      login: "Log in"
+      logout: "Log out"
+      profile: "Profile"
+      setting: "Settings"
+      acc: "Account"
+      user: "Users"
+
+  sessions:
+    new:
+      tit: "Log in"
+      email: "Email"
+      pass: "Password"
+      login: "Log in"
+      new: "New user ?"
+      signup: "Sign up now!"
+      remember: "Remember me on this computer"
+      
